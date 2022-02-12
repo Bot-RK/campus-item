@@ -1,0 +1,49 @@
+.clubIcon{
+    height: 96px;
+    width: 96px;
+    left: 20px;
+    top: 113px;
+    border-radius: 0px;
+    background-image: url(../image/例图.png) ;
+    border: 1px solid #FFFFFF;
+    box-sizing: border-box;
+    float: left;
+    vertical-align: text-bottom;
+    margin-left: 15px;
+    margin-top: 19.2px;
+}
+.box{
+    float: left;
+    vertical-align: baseline;
+    line-height: 0px;
+    font-family:"PingFang SC";
+}
+.clubName{
+    margin-top: 41.2px;
+    font-weight: 500;
+}
+.clubConcern{
+    color: rgba(0, 0, 0, 0.8);
+    font-size: 12px;
+}
+.clubTimes{
+    color: rgba(0, 0, 0, 0.8);
+    font-size: 12px;
+}
+.concern{
+    background: linear-gradient(270deg, #60BEFF 50%, #79CEFF 100%);
+    border-radius: 4px;
+    width: 154px;
+    height: 28px;
+    border: #60BEFF;
+    color: #FFFFFF;
+}
+.clubContext{
+    font-family: "PingFang SC";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 25px;
+    margin-left: 19.2px;
+    clear:both;
+}
