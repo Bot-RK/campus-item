@@ -1,0 +1,17 @@
+.goback{
+   float: left;
+   background-image: url(../image/返回小箭头.png);
+   width: 40px;
+   height: 30px;
+   color: white;
+   vertical-align: baseline;
+}
+.title{
+    vertical-align: baseline;
+    margin-left: 40%;
+}
+.top button{
+    border: none;
+    outline: none;
+    
+}

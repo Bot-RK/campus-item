@@ -1,0 +1,47 @@
+.page{
+    display: flex;
+    justify-content: space-around;
+    font-family: "PingFang SC";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 25px;
+    margin: 22px;
+}
+.page a{
+    text-decoration: none;
+}
+.page-inform{
+    color: #A4B2BA;
+    
+}
+.page-inform-active{
+    color: black;
+    border-bottom: 5px solid currentColor; 
+    border-color: #FB7474;
+    border-radius: 2.5px;
+}
+
+
+.page-dynamicState{
+    color:#A4B2BA ;
+    
+}
+.page-dynamicState-active{
+    color: black;
+    border-bottom: 5px solid currentColor; 
+    border-color: #00B5FF;
+    border-radius: 2.5px;
+}
+.page-focus{
+    color:#A4B2BA ;
+   
+}
+.page-focus-active{
+    color: black;
+    border-bottom: 5px solid currentColor; 
+    border-color : #FFDE53;
+    border-radius: 2.5px;
+}
+
+

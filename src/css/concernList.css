@@ -1,0 +1,14 @@
+.icon1 {
+  background-image: url(../image/例图.png);
+  float: left;
+  width: 46px;
+  height: 46px;
+  margin-left: 10px;
+}
+.concernList {
+  float: right;
+  text-decoration: none;
+  font-size: 32px;
+  margin-right: 10px;
+  line-height: 10px;
+}

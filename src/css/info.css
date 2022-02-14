@@ -1,0 +1,14 @@
+.profile {
+  float: left;
+}
+.box2 {
+  float: left;
+  margin-top: 13px;
+}
+.activitiesName {
+  font-weight: 500;
+  font-family: "PingFang SC";
+  font-style: normal;
+  font-size: 18px;
+  line-height: 20px;
+}

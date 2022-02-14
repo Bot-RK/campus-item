@@ -1,0 +1,23 @@
+/* .search-image {
+  background-image: url(../image/搜索小图标.jpg);
+  width: 15px;
+  height: 15px;
+  float: left;
+  position: absolute;
+  margin: 10px;
+  margin-left: 20.5%;
+} */
+.search-frame {
+  background: url(../image/搜索小图标.jpg) left center no-repeat;
+  height: 37px;
+  border-radius: 8px;
+  letter-spacing: 5px;
+  text-indent: 18px;
+  margin-left: 18.5%;
+  width: 63%;
+  font-family: "PingFang SC";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 20px;
+}

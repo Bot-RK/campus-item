@@ -1,0 +1,16 @@
+.listName {
+  margin-left: 20px;
+  font-family: "PingFang SC";
+  font-size: 24px;
+  line-height: 100%;
+  vertical-align: top;
+  border-bottom: 16px solid #ffde53;
+  width: 96px;
+  border-radius: 8px;
+}
+.letter {
+  color: #fc7677;
+  margin-left: 10px;
+  border-bottom: 1px solid #f0f1f5;
+  line-height: 10px;
+}
