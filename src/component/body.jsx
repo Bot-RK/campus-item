@@ -2,7 +2,11 @@ import { NavLink } from "react-router-dom"
 import { useAppReady } from "mincu-react"
 import { dataModule } from 'mincu-vanilla';
 import '../css/body.css'
+<<<<<<< HEAD
 
+=======
+import { networkModule } from 'mincu-react' // or mincu-network
+>>>>>>> 5ca6e9e84bd8e4cae10606bf3e56418ec2dd1cce
 
  const a=[
        {icon : 1,
@@ -21,6 +25,7 @@ import '../css/body.css'
     ]
 export default function Body(){
    
+<<<<<<< HEAD
 
     const isReady = useAppReady();
   if (isReady) {
@@ -41,17 +46,46 @@ export default function Body(){
             return (<div className="bigbox">
               <div key={item.id}>
               <NavLink className="icon" to={`/club/${item.id}`}>头像</NavLink>
+=======
+    const b=
+    {
+      name : ''
+    }
+    // alert(useAppReady());
+    const isReady = useAppReady();
+    if(isReady){
+      const baseInfo = dataModule.appData.user.profile.entireProfile.base_info
+       b = {
+        name: baseInfo.xm,
+      }
+         
+    }
+    return(
+        <>
+        {a.map((item)=>{
+            return (
+              <div key={item.id}>
+              <NavLink className="icon" to={`/club/${item.id}`}  className="icon">头像</NavLink>
+>>>>>>> 5ca6e9e84bd8e4cae10606bf3e56418ec2dd1cce
               <div className="accountName">
                 <h2>{item.name}</h2>
               </div>
               <div >  
+<<<<<<< HEAD
                 <NavLink className="content" to={`/activities/${item.content}`}>{item.content}</NavLink>
               </div>
+=======
+                <NavLink className="content" to={`/activities/${item.id}`}>{item.content}</NavLink>
+>>>>>>> 5ca6e9e84bd8e4cae10606bf3e56418ec2dd1cce
               </div>
               </div>
             )
         })}
+<<<<<<< HEAD
         
+=======
+        {/* <div>a, {b.name}</div> */}
+>>>>>>> 5ca6e9e84bd8e4cae10606bf3e56418ec2dd1cce
         </>
     )
 }

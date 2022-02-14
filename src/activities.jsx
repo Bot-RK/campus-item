@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import Info from "./component/info"
 import { useParams } from "react-router"
 import { useState } from "react"
@@ -99,3 +100,8 @@ pauseOnHover
    </>
    )
 }
+=======
+export default function Activities(){
+    
+}
+>>>>>>> 5ca6e9e84bd8e4cae10606bf3e56418ec2dd1cce
