@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .icon {
   margin: 10px;
   float: left;
@@ -15,6 +16,7 @@
   border-bottom: 2px solid #f0f1f5;
   clear: both;
 }
+<<<<<<< HEAD
 .time {
   float: right;
   color: rgba(164, 178, 186, 1);
@@ -25,3 +27,14 @@
   text-decoration: none;
   color: black;
 }
+=======
+=======
+.icon{
+    margin: 10px;
+    float: left;
+}
+.accountName{
+    
+}
+>>>>>>> 5ca6e9e84bd8e4cae10606bf3e56418ec2dd1cce
+>>>>>>> 957c50de7b1e7f35cf357cad7317905b6a31980c

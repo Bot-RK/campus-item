@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 /* eslint-disable no-unused-vars */
+=======
+<<<<<<< HEAD
+>>>>>>> 957c50de7b1e7f35cf357cad7317905b6a31980c
 import Info from "./component/info"
 import { useParams } from "react-router"
 import { useEffect, useState } from "react"
@@ -148,3 +152,8 @@ export default function Activities() {
    </>
    )
 }
+=======
+export default function Activities(){
+    
+}
+>>>>>>> 5ca6e9e84bd8e4cae10606bf3e56418ec2dd1cce

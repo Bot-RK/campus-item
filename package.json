@@ -12,8 +12,14 @@
     "react-router": "^6.2.1",
     "react-router-dom": "^6.2.1",
     "react-scripts": "5.0.0",
+<<<<<<< HEAD
     "react-toastify": "^8.1.1",
+<<<<<<< HEAD
     "styled-components": "^5.3.3",
+=======
+=======
+>>>>>>> 5ca6e9e84bd8e4cae10606bf3e56418ec2dd1cce
+>>>>>>> 957c50de7b1e7f35cf357cad7317905b6a31980c
     "web-vitals": "^2.1.4"
   },
   "scripts": {
