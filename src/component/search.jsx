@@ -14,12 +14,13 @@ export default function Search() {
                      if (e.target.value === '') {
                         toast.info('🦄 请不要输入为空!', {
                             position: "top-center",
-                            autoClose: 3000,
+                            autoClose: 1800,
                             hideProgressBar: false,
                             closeOnClick: true,
                             pauseOnHover: true,
                             draggable: true,
                             progress: undefined,
+                            closeButton:false
                         });
                      } else {
                          window.history.pushState({}, undefined, `/search/${text}`);

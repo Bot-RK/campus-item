@@ -1,13 +1,14 @@
+/* eslint-disable no-unused-vars */
 import Info from "./component/info"
 import { useParams } from "react-router"
-import { useState } from "react"
+import { useEffect, useState } from "react"
 import './css/activities.css'
 import { ToastContainer,toast } from "react-toastify"
-
-
-
-
+import service from "./axios"
+import './css/info.css'
+import './css/toast.css'
 export default function Activities() {
+    const { id } = useParams()
     const [user, setUser] = useState({
         id :'2',
         islike: false,
@@ -18,32 +19,79 @@ export default function Activities() {
         remark: 0,
         collect:0
     })
+    const [view, setView] = useState('')
+    const [data, setdata] = useState({})
 
-    const[view,setView]=useState('')
-    const { content } = useParams()
-   return( <>
-       <Info />
+    useEffect(() => {
+        service.get('/user/post', {
+            params: {
+                post_id: id
+            }
+        }).then((res) => {
+            if (res.status === 200) {
+                setdata(res)
+                console.log(res)
+            
+            }
+        }).catch((error) => {
+            toast.info('🦄请求错误', {
+                position: "top-center",
+                autoClose: 3000,
+                hideProgressBar: false,
+                closeOnClick: true,
+                pauseOnHover: true,
+                draggable: true,
+                progress: undefined,
+                closeButton:false,
+            });
+        })
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+    }, [])
+    window.addEventListener('resize', function() {
+        if(
+            document.activeElement.tagName === 'INPUT' ||
+            document.activeElement.tagName === 'TEXTAREA'
+            ) {
+            window.setTimeout(function() {
+            if('scrollIntoView' in document.activeElement) {
+            document.activeElement.scrollIntoView(true);
+            } else {
+            document.activeElement.scrollIntoViewIfNeeded();
+            }console.log(99)
+            }, 0);
+        }
+        this.alert("22222")
+    });
+    function inputFocus(){
+        var dom=document.getElementById('666')
+        setTimeout(function(){
+          dom.scrollIntoView(true);
+            dom.scrollIntoViewIfNeeded();
+            console.log(1)
+        }, 500);
+      }
+    return (<>
+       <Info data={data}/>
        <div className="activitiesContent">
-        <p>{content}</p>
+           {/* <p>{data.data.content}</p> */}
        </div>
-       <ToastContainer
-position="top-center"
-autoClose={3000}
-hideProgressBar={false}
-newestOnTop={false}
-closeOnClick
-rtl={false}
-pauseOnFocusLoss
-draggable
-pauseOnHover
+       <ToastContainer limit={1}
+    position="top-center"
+    autoClose={3000}
+    hideProgressBar={false}
+    newestOnTop={false}
+    closeOnClick
+    rtl={false}
+    pauseOnFocusLoss
+    draggable
+    pauseOnHover
 />
-       <div className="function">
+        <div className="function" id="666" >
            <input className="remark" type="text" placeholder="发一条友善的评论..."
                onChange={(e) => { setView(e.target.value) }}
                onKeyDown={(e) => {
                    if (e.key === "Enter") {
                        if (e.target.value === '') {
-                         
                            toast.info('🦄 请不要输入为空!', {
                                position: "top-center",
                                autoClose: 3000,
@@ -53,10 +101,11 @@ pauseOnHover
                                draggable: true,
                                progress: undefined,
                            });
-                
+                           
                        }
                    }
-               }}
+                }}
+                onFocus={inputFocus}
            />
 
 

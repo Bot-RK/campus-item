@@ -39,16 +39,15 @@ export default function Body(){
         <>
         {a.map((item)=>{
             return (<div className="bigbox">
-              <div key={item.id}>
-              <NavLink className="icon" to={`/club/${item.id}`}>头像</NavLink>
-              <div className="accountName">
-                <h2>{item.name}</h2>
-              </div>
-              <div >  
+              <div>
+                <NavLink className="icon" to={`/club/${item.id}`}></NavLink>
+              </div>  
+                <h1 className="accountName">{item.name}</h1>
+              <div>
                 <NavLink className="content" to={`/activities/${item.content}`}>{item.content}</NavLink>
               </div>
               </div>
-              </div>
+              
             )
         })}
         

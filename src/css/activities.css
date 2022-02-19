@@ -6,7 +6,6 @@
 .function {
   border-top: 2px solid #f0f1f5;
   padding-top: 15px;
-  position: fixed;
   left: 0px;
   bottom: 10px;
   width: 100%;
@@ -45,6 +44,7 @@
   background-color: #f0f1f5;
   margin-bottom: 255px;
 }
+
 .collect {
   background: url(../image/collect.svg) left center no-repeat;
   border: none;

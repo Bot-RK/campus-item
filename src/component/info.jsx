@@ -1,8 +1,6 @@
-import { NavLink } from "react-router-dom"
 import "../css/info.css"
-export default function Info() {
+export default function Info(data) {
     let time = new Date();
-    console.log(time)
     function formatDate(now) {
         var year = now.getFullYear();
         var month = now.getMonth() + 1;
@@ -12,15 +10,14 @@ export default function Info() {
         var second = now.getSeconds();
         return year + "-" + month + "-" + date + " " + hour + ":" + minute + ":" + second;
     }
-let Time=formatDate(time)
-
+    let Time = formatDate(time)
+console.log(1)
     return (
-        <>
-            <div className="profile">
-                <img src="https://incu-header.ncuos.com/app_default_avatar.png " alt="头像" />
+     <>
+            <div className="profile" style={{backgroundImage : `url("${data.data.avatar_addr}")`}}>
             </div>
             <div className="box2">
-                <h3 className="activitiesName">dd</h3>
+                <h3 className="activitiesName">{data.data.club_name}</h3>
                 <p className="date">{Time} 👁️</p>
             </div>
         </>

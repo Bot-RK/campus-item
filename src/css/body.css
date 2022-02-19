@@ -1,9 +1,27 @@
 .icon {
   margin: 10px;
   float: left;
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
 }
 .accountName {
+  margin-top: 9px;
+  display: inline-block;
 }
 .bigbox {
+  padding-left: 3px;
+  padding-right: 10px;
+  border-bottom: 2px solid #f0f1f5;
   clear: both;
+}
+.time {
+  float: right;
+  color: rgba(164, 178, 186, 1);
+}
+.content {
+  margin-top: 1px;
+  clear: both;
+  text-decoration: none;
+  color: black;
 }

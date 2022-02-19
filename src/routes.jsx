@@ -7,17 +7,18 @@ import Activities from './activities'
 import App from './toast';
 import List from './list';
 import SearchPage from './searchPage';
+import Ceshi from './ceshi';
 
 export default function Routess(){
     return(
         <>
         <Routes>
                 <Route path="/" element={<Inform />} />
-                <Route path='/toast' element={<App />} />
+                <Route path='/toast' element={<Ceshi />} />
                 <Route path="/dynamicState" element={<DynamicState />}/>
                 <Route path="/focus" element={<Focus/>}/>
                 <Route path='/club/:id' element={<Club />}/>
-                <Route path='/activities/:content' element={<Activities />} />
+                <Route path='/activities/:id' element={<Activities />} />
                 <Route path='/list/:id' element={<List/>}/>
                 <Route path='/search/:text' element={<SearchPage />}/>
         </Routes>

@@ -5,9 +5,7 @@ import './css/search.css'
 import './css/searchPage.css'
 export default function SearchPage() {
     let { text } = useParams();
-    
-    const [content, setContent] = useState("")
-
+    const[content,setContent]=useState('')
     return (
         <> <input type="search" className="search-frame" placeholder={text} onChange={(e)=>{setContent(e.target.value)}}
         onKeyDown={(e) => {
